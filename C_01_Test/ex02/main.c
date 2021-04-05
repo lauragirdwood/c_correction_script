@@ -5,14 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pyago-ra <pyago-ra@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/05 15:05:12 by pyago-ra          #+#    #+#             */
-/*   Updated: 2021/04/05 15:05:13 by pyago-ra         ###   ########.fr       */
+/*   Created: 2021/04/03 02:17:15 by pyago-ra          #+#    #+#             */
+/*   Updated: 2021/04/05 15:04:48 by pyago-ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_print_comb(void);
+#include <stdio.h>
 
-int main(void)
+void ft_swap(int *a, int *b);
+
+int	main(void)
 {
-	ft_print_comb();
+	int a = 0;
+	int b = 10;
+	printf("%d <-> %d\n", a, b);
+	ft_swap(&a, &b);
+	printf("%d <-> %d\n", a, b);
+	return (0);
 }

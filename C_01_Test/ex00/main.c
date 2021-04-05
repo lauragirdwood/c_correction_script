@@ -5,14 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pyago-ra <pyago-ra@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/05 15:05:12 by pyago-ra          #+#    #+#             */
-/*   Updated: 2021/04/05 15:05:13 by pyago-ra         ###   ########.fr       */
+/*   Created: 2021/04/03 02:17:15 by pyago-ra          #+#    #+#             */
+/*   Updated: 2021/04/03 02:19:17 by pyago-ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_print_comb(void);
+#include <stdio.h>
 
-int main(void)
+void ft_ft(int *nbr);
+
+int	main(void)
 {
-	ft_print_comb();
+	int nbr = 0;
+	printf("%d\n", nbr);
+	ft_ft(&nbr);
+	printf("%d\n", nbr);
+	return (0);
 }

@@ -1,18 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pyago-ra <pyago-ra@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/05 15:05:12 by pyago-ra          #+#    #+#             */
-/*   Updated: 2021/04/05 15:05:13 by pyago-ra         ###   ########.fr       */
+/*   Created: 2021/04/03 12:00:49 by pyago-ra          #+#    #+#             */
+/*   Updated: 2021/04/05 12:44:04 by pyago-ra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_print_comb(void);
-
-int main(void)
+int	ft_str_is_lowercase(char *str)
 {
-	ft_print_comb();
+	int i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if(str[i] < 'a' || str[i] > 'z')
+			return(0);
+		i++;
+	}
+	return(1);
 }
