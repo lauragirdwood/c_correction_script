@@ -5,4 +5,6 @@ gcc *.c -o ex11_t -Wall -Wextra -Werror;
 echo "-------------------------------------";
 ./ex11_t | cat -e;
 
-echo "O endereço de memoria é diferente, então veja o arquivo .compare_teste para verificar a saida."
+echo ""
+echo "Aviso ->  Endereço de memoria é diferente, então veja o arquivo .compare_teste para verificar a saida."
+echo ""

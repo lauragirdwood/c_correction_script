@@ -9,7 +9,7 @@ int main()
 	unsigned int size = 10;
 	char dst[5] = "teste";
 	char src[5] = "12345";
-	printf("%u - ", ft_strlcpy(dst, src, size));
+	printf("%zu - ", strlcpy(dst, src, size));
 	printf("%s", dst);
 	printf("\n");
 	size = 20;
